@@ -1,18 +1,48 @@
-<header class="text-gray-400 bg-gray-900 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl">ParkEase</span>
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" class="mr-5 hover:text-white">Home</a>
-        <a routerLink="/login" routerLinkActive="active" class="mr-5 hover:text-white">Log-in</a>
-        <a routerLink="/signup" routerLinkActive="active" class="mr-5 hover:text-white">Sign-up</a>
-        <a routerLink="/parking" routerLinkActive="active" class="mr-5 hover:text-white">Locations</a>
-        <a routerLink="/contact" routerLinkActive="active" class="mr-5 hover:text-white">Contact</a>
-      </nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="navbar.component.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <div class="navbar-brand">
+          <a href="#" class="logo">
+            <span class="logo-text">ParkEase</span>
+          </a>
+        </div>
+        <nav class="navbar-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/" [routerLinkActiveOptions]="{exact: true}"
+                routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/login" routerLinkActive="active">Log-in</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/signup" routerLinkActive="active">Sign-up</a>
+            </li>
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/parking" routerLinkActive="active">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
-  
+
+</body>
+
+</html>
