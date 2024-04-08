@@ -6,7 +6,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
+  host: {ngSkipHydration: 'true'}
 })
 export class NavbarComponent {
 
