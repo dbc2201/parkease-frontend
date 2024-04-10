@@ -1,1 +1,37 @@
-<p>navbar works!</p>
+<main>
+  <link rel="stylesheet" href="navbar.component.css">
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <div class="navbar-brand">
+          <a href="#" class="logo">
+            <span class="logo-text">ParkEase</span>
+          </a>
+        </div>
+        <nav class="navbar-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/" [routerLinkActiveOptions]="{exact: true}"
+                routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/parking" routerLinkActive="active">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/login" routerLinkActive="active">Log-in</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" routerLink="/signup" routerLinkActive="active">Registration</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+</body>
+
+</main>
